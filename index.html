@@ -4,35 +4,94 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Najla Albeladi | Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0B0F1F;--card:#151A30;--gold:#F7D046;--muted:#9AA0B8;--border:#232845}
+:root{--bg:#0B0F1F;--card:#151A30;--gold:#F7D046;--muted:#9AA0B8;--border:#2A2F4A}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:#fff;font-family:'Inter',sans-serif}
-h1,h2,h3{font-family:'Space Grotesk',sans-serif}
-.container{max-width:1000px;margin:0 auto;padding:24px}
-nav{display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:700}.logo span{color:var(--gold)}
-.badge{border:1px solid var(--gold);color:var(--gold);padding:6px 12px;border-radius:20px;font-size:10px}
-.hero{padding:50px 0;display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:center}
-@media(max-width:700px){.hero{grid-template-columns:1fr;text-align:center}}
-.hero h1{font-size:52px;line-height:.9}.hero h1 span{color:var(--gold)}
-.hero p{color:var(--muted);margin:16px 0}
-.btn{padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:700;font-size:14px;display:inline-block;margin:4px}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+.logo{font-weight:800}.logo span{color:var(--gold)}
+.badge{border:1px solid var(--gold);color:var(--gold);padding:5px 12px;border-radius:20px;font-size:10px}
+.hero{display:grid;grid-template-columns:1fr 320px;gap:30px;align-items:center}
+@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center}}
+.hero h1{font-size:48px;line-height:.9}.hero h1 span{color:var(--gold)}
+.hero p{color:var(--muted);margin:14px 0}
+.btn{padding:10px 22px;border-radius:30px;text-decoration:none;font-weight:700;font-size:13px;display:inline-block;margin:4px}
 .btn-gold{background:var(--gold);color:#000}.btn-out{border:1px solid var(--border);color:#fff}
-.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;margin-top:20px}
-.project{margin-top:30px;border-left:4px solid var(--gold);padding-left:16px}
-a{color:var(--gold)}
+.avatar{width:260px;height:260px;border-radius:50%;background:var(--gold);padding:6px;margin:auto}
+.avatar-inner{width:100%;height:100%;border-radius:50%;background:#111;display:flex;align-items:center;justify-content:center;font-size:80px}
+.section-label{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:3px 10px;border-radius:20px;font-size:10px;margin:40px 0 16px}
+.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+@media(max-width:900px){.skills-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.skills-grid{grid-template-columns:1fr}}
+.skill-col{padding:18px;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.skill-col h3{color:var(--gold);font-size:15px;margin-bottom:14px}
+.skill-item{display:flex;align-items:center;gap:10px;margin:12px 0;font-size:13px}
+.icon{width:30px;height:30px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;font-weight:800;font-size:14px}
+a{color:var(--gold);text-decoration:none}
 </style>
 </head>
 <body>
 <div class="container">
-<nav><div class="logo">NAJLA <span>ALBELADI</span></div><div class="badge">PORTFOLIO</div></nav>
+<nav><div class="logo">NAJLA <span>ALBELADI</span></div><div class="badge">DATA ANALYST PORTFOLIO</div></nav>
 <div class="hero">
 <div>
+<div style="color:var(--gold);font-size:11px;letter-spacing:2px;font-weight:700;margin-bottom:8px">HELLO, I'M</div>
 <h1>NAJLA<br><span>ALBELADI</span></h1>
-<p>I help businesses find insights through data. IT Graduate | Network Systems & Data Analysis.</p>
-<a href="https://github.com/csnajla" class="btn btn-gold">View Projects</a>
-<a href="https://github.com/csnajla" class="btn btn-out">GitHub</a>
+<p>I help businesses finding insights through data. IT Graduate specialized in Network Systems & Data Analysis.</p>
+<div>
+<a href="https://www.linkedin.com/in/najla-albeladi" target="_blank" class="btn btn-gold">LinkedIn</a>
+<a href="mailto:Najla_albeladi@hotmail.com" class="btn btn-out">Email Me</a>
+<a href="https://github.com/csnajla" class="btn btn-out" style="border-color:var(--gold);color:var(--gold)">GitHub</a>
 </div>
-<div style="width:260px;height:260px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:80px;margin
+</div>
+<div class="avatar"><div class="avatar-inner">👩🏻‍💻</div></div>
+</div>
+<div id="skills">
+<span class="section-label">Technical Skills</span>
+<div class="skills-grid">
+<div class="skill-col">
+<h3>Programming<br>Languages</h3>
+<div class="skill-item"><div class="icon">◈</div> SQL</div>
+<div class="skill-item"><div class="icon">◈</div> Python</div>
+</div>
+<div class="skill-col">
+<h3>Data Analytic<br>Tools</h3>
+<div class="skill-item"><div class="icon">X</div> Microsoft Excel</div>
+<div class="skill-item"><div class="icon">S</div> Google Sheet</div>
+<div class="skill-item"><div class="icon">Q</div> Google BigQuery</div>
+<div class="skill-item"><div class="icon"><></div> Visual Code Studio</div>
+</div>
+<div class="skill-col">
+<h3>Data Visualization<br>Tools</h3>
+<div class="skill-item"><div class="icon">▲</div> Tableau</div>
+<div class="skill-item"><div class="icon">◎</div> Looker Studio</div>
+<div class="skill-item"><div class="icon">📊</div> Matplotlib</div>
+</div>
+<div class="skill-col">
+<h3>Data Analytic<br>Methods</h3>
+<div class="skill-item"><div class="icon">•</div> EDA</div>
+<div class="skill-item"><div class="icon">•</div> Segmentation / Clustering</div>
+<div class="skill-item"><div class="icon">•</div> Cohort</div>
+<div class="skill-item"><div class="icon">•</div> Linear Regression</div>
+<div class="skill-item"><div class="icon">•</div> Logistic Regression</div>
+<div class="skill-item"><div class="icon">•</div> Statistic</div>
+<div class="skill-item"><div class="icon">•</div> A/B Testing</div>
+<div class="skill-item"><div class="icon">•</div> ANOVA</div>
+<div class="skill-item"><div class="icon">•</div> (Post-Hoc) T-Test</div>
+</div>
+</div>
+</div>
+<div style="text-align:center;margin-top:50px;padding:30px;background:#151A30;border-radius:16px;border:1px solid #2A2F4A">
+<h2>Let's connect!</h2>
+<p style="color:#9AA0B8;margin:10px 0">Available for remote work</p>
+<p style="margin-top:14px">
+<a href="https://www.linkedin.com/in/najla-albeladi" target="_blank" style="margin:0 10px">🔗 linkedin.com/in/najla-albeladi</a>
+<a href="mailto:Najla_albeladi@hotmail.com" style="margin:0 10px">📧 Najla_albeladi@hotmail.com</a>
+</p>
+<p style="margin-top:10px"><a href="https://github.com/csnajla" target="_blank">💻 github.com/csnajla</a></p>
+</div>
+</div>
+</body>
+</html>
