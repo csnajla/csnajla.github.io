@@ -3,49 +3,53 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Najla AlBeladi | Data Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0A1222;--card:#121F3B;--gold:#E9B44C;--line:#22335A;--muted:#8A94AB}
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:#E6EAF2;font-family:sans-serif}
-nav{display:flex;justify-content:space-between;padding:16px 5%;background:#121F3B;border-bottom:1px solid var(--line);position:sticky;top:0}
-.logo{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--gold);object-fit:cover}
-.btn{background:var(--gold);color:#0A1222;padding:8px 16px;border-radius:6px;font-weight:700;text-decoration:none;font-size:13px}
-.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;padding:50px 5%;align-items:center}
-.hero h1{color:var(--gold);font-size:42px}
-.avatar{width:280px;height:280px;border-radius:50%;border:3px solid var(--gold);object-fit:cover}
-.sec{padding:25px 5%}
-.card{background:#121F3B;border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
-.card:hover{border-color:var(--gold)}
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.pcard{background:#121F3B;border-left:3px solid var(--gold);border-radius:10px;padding:16px}
-.tag{background:rgba(233,180,76,.15);color:var(--gold);border:1px solid var(--gold);padding:2px 7px;border-radius:20px;font-size:10px}
-.available{display:inline-flex;gap:8px;align-items:center;margin-top:12px;background:rgba(233,180,76,.1);border:1px solid rgba(233,180,76,.25);padding:6px 14px;border-radius:20px;font-size:12px;color:var(--gold)}
-.dot{width:8px;height:8px;background:#22C55E;border-radius:50%}
-@media(max-width:800px){.hero{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}}
+:root{--bg:#0A1222;--card:#121F3B;--card2:#162544;--gold:#E9B44C;--line:#22335A;--muted:#8A94AB;--text:#E6EAF2}
+*{margin:0;padding:0;box-sizing:border-box}body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',sans-serif}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 5%;background:rgba(18,31,59,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.nav-logo{display:flex;align-items:center;gap:10px}.nav-logo img{width:40px;height:40px;border-radius:50%;border:2px solid var(--gold);object-fit:cover}.nav-logo b{color:var(--gold);letter-spacing:1px;font-size:13px}
+.links{display:flex;gap:24px;align-items:center}.links a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:600}.btn-gold{background:var(--gold);color:#0A1222;padding:9px 18px;border-radius:8px;font-weight:800;font-size:13px;text-decoration:none}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;padding:60px 5% 30px}
+.hero h1{font-size:52px;font-weight:800;color:var(--gold);line-height:.9}.hero h2{font-size:19px;margin:14px 0 10px}.hero .desc{color:var(--muted);font-size:14px;line-height:1.7}
+.badge{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:rgba(233,180,76,.1);border:1px solid rgba(233,180,76,.25);padding:7px 14px;border-radius:24px;font-size:12px;color:var(--gold);font-weight:600}.dot{width:8px;height:8px;background:#22C55E;border-radius:50%;box-shadow:0 0 8px #22C55E}
+.hero-btns{display:flex;gap:10px;margin-top:22px}.btn-out{border:1px solid var(--line);color:#fff;padding:9px 18px;border-radius:8px;font-size:13px;text-decoration:none}
+.stats{display:flex;gap:32px;margin-top:28px}.st{display:flex;gap:10px;align-items:center}.st .ic{width:30px;height:30px;background:rgba(233,180,76,.12);border-radius:8px;display:grid;place-items:center;color:var(--gold)}
+.avatar-wrap{display:flex;justify-content:center}.avatar{width:320px;height:320px;border-radius:50%;border:3px solid var(--gold);padding:6px;object-fit:cover;background:var(--bg)}
+.sec{padding:30px 5%}.sec-head{margin-bottom:16px}.sec-title{color:var(--gold);font-weight:800;font-size:20px}.sec-sub{color:var(--muted);font-size:13px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center;transition:.3s}.card:hover{border-color:var(--gold);transform:translateY(-4px)}.card h4{margin:8px 0 4px}.card p{font-size:11px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.pcard{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:12px;padding:18px;display:grid;grid-template-columns:1.3fr .7fr;gap:12px}.pcard h4{color:var(--gold);font-size:13px}.pcard p{font-size:11.5px;color:var(--muted);margin:8px 0;line-height:1.6}.tag{background:rgba(233,180,76,.12);border:1px solid rgba(233,180,76,.25);color:var(--gold);font-size:10px;padding:3px 8px;border-radius:20px;margin:2px;font-weight:700;display:inline-block}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:10px}.c-box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.c-box a{color:var(--gold);text-decoration:none;font-weight:600}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,1fr)}.grid2,.contact{grid-template-columns:1fr}.avatar{width:240px;height:240px}.links{display:none}}
 </style>
 </head>
 <body>
-<nav><div style="display:flex;gap:10px;align-items:center"><img src="logo.png.jpeg" class="logo"><b style="color:var(--gold)">NAJLA • DATA</b></div><a class="btn" href="#contact">Hire Me</a></nav>
-<div class="hero">
+<nav><div class="nav-logo"><img src="logo.png.jpeg" alt="logo"><b>NAJLA • DATA</b></div><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a class="btn-gold" href="#contact">Hire Me</a></div></nav>
+
+<div class="hero" id="about">
 <div>
 <h1>NAJLA ALBELADI</h1>
 <h2>I help businesses find insights through data</h2>
-<p style="color:var(--muted);font-size:13px;margin:8px 0">Saudi Data Analyst based in Al Makhwah, Al Bahah Region<br>Data Analyst • Python • Data Visualization • Business Analytics</p>
-<div class="available"><span class="dot"></span> Available for Work — Remote & On-site</div>
-<div style="display:flex;gap:20px;margin-top:20px"><div><b style="color:var(--gold)">02+</b><p style="font-size:11px;color:var(--muted)">Projects</p></div><div><b style="color:var(--gold)">8+</b><p style="font-size:11px;color:var(--muted)">Technologies</p></div><div><b style="color:var(--gold)">100%</b><p style="font-size:11px;color:var(--muted)">Commitment</p></div></div>
+<div class="desc">Data Analyst | Python • SQL • Data Visualization • Business Analytics<br>Passionate about turning raw data into clear business decisions</div>
+<div class="badge"><span class="dot"></span> Available for Work — Remote & On-site</div>
+<div class="hero-btns"><a class="btn-gold" href="#projects">View Projects →</a><a class="btn-out" href="#">Download CV</a></div>
+<div class="stats">
+<div class="st"><div class="ic">📊</div><div><b>02+</b><p style="color:var(--muted);font-size:11px">Projects</p></div></div>
+<div class="st"><div class="ic">⚙️</div><div><b>8+</b><p style="color:var(--muted);font-size:11px">Technologies</p></div></div>
+<div class="st"><div class="ic">⭐</div><div><b>100%</b><p style="color:var(--muted);font-size:11px">Commitment</p></div></div>
 </div>
-<div style="display:flex;justify-content:center"><img src="logo.png.jpeg" class="avatar"></div>
 </div>
-<div class="sec"><div style="color:var(--gold);font-weight:700">Technical Skills</div><div class="grid4" style="margin-top:12px">
-<div class="card"><div>🐍</div><h4>Python</h4><p style="font-size:11px;color:var(--muted)">Pandas • NumPy</p></div>
-<div class="card"><div>🗄️</div><h4>SQL</h4><p style="font-size:11px;color:var(--muted)">PostgreSQL</p></div>
-<div class="card"><div>📊</div><h4>Tableau</h4><p style="font-size:11px;color:var(--muted)">Dashboards</p></div>
-<div class="card"><div>📈</div><h4>Power BI</h4><p style="font-size:11px;color:var(--muted)">DAX</p></div>
-</div></div>
-<div class="sec"><div style="color:var(--gold);font-weight:700">Project Showcase</div><div class="grid2" style="margin-top:12px">
-<div class="pcard"><h4 style="color:var(--gold)">01 PROBABILITY LAB</h4><p style="font-size:12px;color:var(--muted)">Interactive stats dashboard.</p><span class="tag">Python</span></div>
-<div class="pcard"><h4 style="color:var(--gold)">02 NEXT PROJECT</h4><p style="font-size:12px;color:var(--muted)">Coming soon.</p><span class="tag">Soon</span></div>
-</div></div>
-</body>
-</html>
+<div class="avatar-wrap"><img class="avatar" src="logo.png.jpeg" alt="Najla"></div>
+</div>
+
+<div class="sec" id="skills">
+<div class="sec-head"><div class="sec-title">Technical Skills</div><div class="sec-sub">Tools & Technologies I work with</div></div>
+<div class="grid4">
+<div class="card">🐍<h4>Python</h4><p>Pandas • NumPy • Matplotlib</p></div>
+<div class="card">🗃️<h4>SQL</h4><p>PostgreSQL • MySQL • BigQuery</p></div>
+<div class="card">📊<h4>Tableau</h4><p>Dashboards • Storytelling</p></div>
+<div class="card">📈<h4>Power BI</h4><p>DAX • Data Modeling</p></div>
+<div class="card">📑<h4>Excel</h4><p>Advanced • Pivot • VBA</p></div>
+<div class="card">📉<h4>Statistics</h4><p>Probability • A/B Testing</p></div>
+<div class="card">🔧<h4>ETL</h4><p>Data
